@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
@@ -14,7 +12,7 @@
   },
   "dependencies": {
     "core-js": "^3.19.3",
-    "nuxt": "^2.15.8",
+    "nuxt-edge": "latest",
     "nuxt-leaflet": "^0.0.27",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
@@ -23,6 +21,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27747000.69db93e",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^8.0.0",
